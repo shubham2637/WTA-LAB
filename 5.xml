@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE student_information[
+<!ELEMENT student_information (ad+)>
+<!ELEMENT ad (usn,name,college,branch,year,email)>
+<!ELEMENT usn (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT college (#PCDATA)>
+<!ELEMENT branch (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+]>
+
+<?xml-stylesheet type="text/css" href="5.css"?>
+<student_information>
+	<h1>First Student Information</h1>
+        <ad><label>USN:</label><usn>1JB16CS001</usn></ad>
+        <ad><label>Name:</label><name>ABC</name></ad>
+        <ad><label>College:</label><college>SJBIT</college></ad>
+        <ad><label>Branch:</label><branch>CSE</branch></ad>
+        <ad><label>Year:</label><year>2016</year></ad>
+        <ad><label>Email:</label><email>abc@outlook.com</email></ad>
+	<h1>Second Student Information</h1>
+        <ad><label>USN:</label><usn>1JB16CS002</usn></ad>
+        <ad><label>Name:</label><name>DEF</name></ad>
+        <ad><label>College:</label><college>SJBIT</college></ad>
+        <ad><label>Branch:</label><branch>CSE</branch></ad>
+        <ad><label>Year:</label><year>2016</year></ad>
+        <ad><label>Email:</label><email>def@outlook.com</email></ad>
+	<h1>Third Student Information</h1>
+        <ad><label>USN:</label><usn>1JB16CS003</usn></ad>
+        <ad><label>Name:</label><name>GHI</name></ad>
+        <ad><label>College:</label><college>SJBIT</college></ad>
+        <ad><label>Branch:</label><branch>CSE</branch></ad>
+        <ad><label>Year:</label><year>2016</year></ad>
+        <ad><label>Email:</label><email>ghi@outlook.com</email></ad>
+</student_information>

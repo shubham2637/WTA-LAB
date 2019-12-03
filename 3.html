@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Singh</title>
+    </head>
+    <body>
+        <p id="font-size"></p>
+        <p id="myp1"></p>
+    </body>
+    <script>
+        var size=10;
+        document.getElementById("myp1").innerHTML="TEXT GROWING";
+        document.getElementById("myp1").style.color="blue";
+        var wait1=setInterval(GrowText1,100);
+        function GrowText1() {
+            if(size<50){
+                size=size+1;
+                document.getElementById("myp1").style.fontSize=(size+'pt');
+            }
+            else{
+                document.getElementById("myp1").innerHTML="TEXT SHRINKING";
+                document.getElementById("myp1").style.color="red";
+                clearInterval(wait1);
+                wait1=setInterval(ShrinkText1,100);
+            }
+            document.getElementById("font-size").innerHTML=('font-size='+size+'pt');
+        }
+        function ShrinkText1() {
+            if(size>5){
+                size=size-1;
+                document.getElementById("myp1").style.fontSize=(size+'pt');
+            }
+            document.getElementById("font-size").innerHTML=('Font size: '+size+'pt');
+            
+        }
+    </script>
+</html>

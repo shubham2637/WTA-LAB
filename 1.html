@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <script type="text/javascript">
+        function multiplyBY() {
+            num1 = document.getElementById("n1").value;
+            num2 = document.getElementById("n2").value;
+            document.getElementById("results").innerHTML=num1*num2;
+        }
+        function divideBY() {
+            num1 = document.getElementById("n1").value;
+            num2 = document.getElementById("n2").value;
+            document.getElementById("results").innerHTML=num1/num2;
+        }
+        function addBY() {
+            num1 = document.getElementById("n1").value;
+            num2 = document.getElementById("n2").value;
+            document.getElementById("results").innerHTML=Number(num1)+Number(num2);
+        }
+        function subtractBY() {
+            num1 = document.getElementById("n1").value;
+            num2 = document.getElementById("n2").value;
+            document.getElementById("results").innerHTML=num1-num2;
+        }
+        </script>
+    </head>
+    <body>
+        <center>
+            <table border="1">
+                <tr>
+                    <td>1st Number:</td><td><input type="text" id="n1" size="9"></td>
+                    <td>2nd Number:</td><td><input type="text" id="n2" size="9"></td>
+                </tr>
+                <tr>
+                    <td align="center"><input type="button" onclick="multiplyBY()" value="Multiply"></td>
+                    <td align="center"><input type="button" onclick="divideBY()" value="Divide"></td>
+                    <td align="center"><input type="button" onclick="addBY()" value="Add"></td>
+                    <td align="center"><input type="button" onclick="subtractBY()" value="Subtract"></td>
+                </tr>
+                <tr>
+                    <td><p>Result is : </p></td>
+                    <td colspan="3"><span id="results"></span></td>
+                </tr>
+            </table>
+        </center>
+    </body>
+</html>

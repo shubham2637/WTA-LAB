@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Singh</title>
+        <script type="text/javascript">
+            function vow(s){
+                var pos;
+                if (isNaN(s)){
+                    pos = s.search(/[aeiouAEIOU]/);
+                    if(pos>=0)
+                        alert("Position of leftmost vowel is "+pos);
+                    else
+                        alert("Pattern not found");
+                }
+                else
+                {
+                    var t=0,rev=0,n=Number(s);
+                    while(n>0){
+                        t=n%10;
+                        rev=rev*10+temp;
+                        n=n/10;
+                        n=Number(n);
+                    }
+                    alert("Reverse of Number is "+rev);
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <FORM>
+            <p>Enter the text/Number : </p>
+            <input type="text"  id="N"/>
+            <input type="button" value="click me" onclick="vow(N.value)"/>
+        </FORM>
+    </body>
+</html>
